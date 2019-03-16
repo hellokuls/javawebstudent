@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/libs/standard.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/libs/mchange-commons-java-0.2.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/libs/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/libs/commons-dbutils-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/libs/commons-beanutils-1.8.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/web/WEB-INF/libs/c3p0-0.9.5.2.jar!/" />
+      <root url="file://$PROJECT_DIR$/web/WEB-INF/libs" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/web/WEB-INF/libs" recursive="false" />
+  </library>
+</component>

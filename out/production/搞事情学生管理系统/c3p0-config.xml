@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<c3p0-config>
+    <!-- 默认配置，如果没有指定则使用这个配置 -->
+    <default-config>
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/gsqstudent</property>
+        <property name="user">root</property>
+        <property name="password">LS985548459</property>
+        <!-- 初始化池大小 -->
+        <property name="initialPoolSize">10</property>
+        <!-- 最大空闲时间 -->
+        <property name="maxIdleTime">30</property>
+        <!-- 最多有多少个连接 -->
+        <property name="maxPoolSize">15</property>
+        <!-- 最少几个连接 -->
+        <property name="minPoolSize">5</property>
+        <!-- 每次最多可以执行多少个批处理语句 -->
+        <property name="maxStatements">50</property>
+    </default-config>
+    <!-- 命名的配置 -->
+    <named-config name="51zixue"><!--这里是设置配置文件的名字-->
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/fresh</property>
+        <property name="user">root</property><!--mysql的登陆名-->
+        <property name="password">root</property><!--如果没密码就可以设置成<property name="password"></property>-->
+        <property name="acquireIncrement">5</property><!-- 如果池中数据连接不够时一次增长多少个 -->
+        <property name="initialPoolSize">10</property>
+        <property name="minPoolSize">5</property>
+        <property name="maxPoolSize">15</property>
+        <property name="maxStatements">0</property>
+        <property name="maxStatementsPerConnection">5</property> <!-- he's important, but there's only one of him -->
+    </named-config>
+</c3p0-config>
